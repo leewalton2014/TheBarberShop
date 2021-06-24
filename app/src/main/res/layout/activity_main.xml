@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Welcome to the barber shop booking app!"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your name"
+        />
+    <EditText
+        android:id="@+id/txt_enterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        />
+    <Button
+        android:id="@+id/btn_customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Customer"
+        android:onClick="goToCustomer"
+        />
+    <Button
+        android:id="@+id/btn_staff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Staff"
+        android:onClick="goToStaff"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
